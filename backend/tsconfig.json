@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Api",
+  "compilerOptions": {
+    "allowJs": true,
+    "declaration": true,
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "incremental": false,
+    "isolatedModules": true,
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "moduleDetection": "force",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "noUncheckedIndexedAccess": false,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "ES2022",
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@backend/*": ["../backend/src/*"]
+    },
+    "strictNullChecks": true
+  },
+  "include": ["src", "scripts"],
+  "exclude": ["node_modules", "dist", "drizzle.config.ts"]
+}

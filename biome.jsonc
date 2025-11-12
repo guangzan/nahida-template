@@ -1,0 +1,51 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "extends": ["ultracite/core", "ultracite/next"],
+  "files": {
+    "includes": [
+      "!frontend/src/components/ui",
+      "!frontend/src/components/magicui"
+    ]
+  },
+  "javascript": {
+    "globals": ["Bun"],
+    "formatter": {
+      "semicolons": "asNeeded"
+    }
+  },
+  "linter": {
+    "rules": {
+      "nursery": {
+        "useConsistentArrowReturn": "off",
+        "noShadow": "off",
+        "noEmptySource": "off"
+      },
+      "performance": {
+        "noAccumulatingSpread": "off",
+        "useTopLevelRegex": "off"
+      },
+      "style": {
+        "noNamespace": "off",
+        "useConsistentTypeDefinitions": "off",
+        "useBlockStatements": "off",
+        "noNestedTernary": "off",
+        "useFilenamingConvention": "off"
+      },
+      "complexity": {
+        "noStaticOnlyClass": "off",
+        "noExcessiveCognitiveComplexity": "off"
+      },
+      "suspicious": {
+        "noEmptyBlockStatements": "off",
+        "noAlert": "off",
+        "noArrayIndexKey": "off"
+      },
+      "a11y": {
+        "noNoninteractiveElementInteractions": "off",
+        "noStaticElementInteractions": "off",
+        "useKeyWithClickEvents": "off",
+        "useValidAnchor": "off"
+      }
+    }
+  }
+}

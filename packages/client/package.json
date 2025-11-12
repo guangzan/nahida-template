@@ -1,0 +1,10 @@
+{
+  "name": "client",
+  "devDependencies": {
+    "@elysiajs/eden": "catalog:",
+    "typescript": "catalog:"
+  },
+  "private": true,
+  "scripts": {},
+  "type": "module"
+}
