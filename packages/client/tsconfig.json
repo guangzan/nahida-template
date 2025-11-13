@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Default",
+  "compilerOptions": {
+    "allowJs": true,
+    "declaration": true,
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "incremental": false,
+    "isolatedModules": true,
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleDetection": "force",
+    "moduleResolution": "bundler",
+    "noUncheckedIndexedAccess": false,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "ES2022",
+    "baseUrl": ".",
+    "paths": {
+      "@backend": ["../../backend/src/index.ts"],
+      "@backend/*": ["../../backend/src/*"]
+    },
+    "strictNullChecks": true
+  },
+  "include": ["src", "scripts", "postcss.config.mjs"],
+  "exclude": ["node_modules", "dist"]
+}
