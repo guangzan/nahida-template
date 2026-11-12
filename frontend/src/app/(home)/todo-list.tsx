@@ -43,7 +43,9 @@ export function TodoList() {
     <Card>
       <CardHeader>
         <CardTitle>Todo List</CardTitle>
-        {error && <CardDescription>Error: {error.message}</CardDescription>}
+        {error ? (
+          <CardDescription>Error: {error.message}</CardDescription>
+        ) : null}
       </CardHeader>
       <CardContent>
         <ul>
