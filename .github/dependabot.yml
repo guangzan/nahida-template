@@ -1,6 +1,8 @@
 version: 2
 updates:
-  - package-ecosystem: 'npm'
+  # This repo is managed by Bun (bun.lock only). Declaring the npm ecosystem makes
+  # Dependabot fail every run during update_files, so no npm PR is ever opened.
+  - package-ecosystem: 'bun'
     directory: './'
     schedule:
       interval: 'daily'
