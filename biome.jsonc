@@ -1,11 +1,20 @@
 {
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
-  "extends": ["ultracite/core", "ultracite/next"],
+  "extends": ["ultracite/biome/core", "ultracite/biome/next"],
   "files": {
     "includes": [
       "!frontend/src/components/ui",
       "!frontend/src/components/magicui"
     ]
+  },
+  "assist": {
+    "actions": {
+      "source": {
+        "useSortedAttributes": "off",
+        "useSortedKeys": "off",
+        "useSortedPackageJson": "off"
+      }
+    }
   },
   "javascript": {
     "globals": ["Bun"],
@@ -16,9 +25,7 @@
   "linter": {
     "rules": {
       "nursery": {
-        "useConsistentArrowReturn": "off",
-        "noShadow": "off",
-        "noEmptySource": "off"
+        "useTailwindSortedClasses": "off"
       },
       "performance": {
         "noAccumulatingSpread": "off",
@@ -26,6 +33,7 @@
       },
       "style": {
         "noNamespace": "off",
+        "useConsistentArrowReturn": "off",
         "useConsistentTypeDefinitions": "off",
         "useBlockStatements": "off",
         "noNestedTernary": "off",
@@ -36,6 +44,8 @@
         "noExcessiveCognitiveComplexity": "off"
       },
       "suspicious": {
+        "noShadow": "off",
+        "noEmptySource": "off",
         "noEmptyBlockStatements": "off",
         "noAlert": "off",
         "noArrayIndexKey": "off"

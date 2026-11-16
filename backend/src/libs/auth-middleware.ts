@@ -19,6 +19,7 @@ export const authMiddleware = new Elysia({ name: "better-auth" })
             session: session.session,
           }
         } catch {
+          // biome-ignore lint/style/useErrorCause: a 401 Response has no `cause` option, and the failure reason must not reach the client
           throw new Response("Unauthorized", { status: 401 })
         }
       },
