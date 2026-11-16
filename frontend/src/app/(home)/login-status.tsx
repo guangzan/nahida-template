@@ -1,6 +1,7 @@
 "use client"
 
 import { useQueryClient } from "@tanstack/react-query"
+import { useCallback } from "react"
 import { Button } from "@/components/ui/button"
 import { authClient } from "@/lib/auth-client"
 
@@ -8,17 +9,17 @@ export function LoginStatus() {
   const { data: session } = authClient.useSession()
   const queryClient = useQueryClient()
 
-  const handleGithubLogin = () => {
+  const handleGithubLogin = useCallback(() => {
     authClient.signIn.social({
       provider: "github",
       callbackURL: "/",
     })
-  }
+  }, [])
 
-  const handleLogout = async () => {
+  const handleLogout = useCallback(async () => {
     await authClient.signOut()
     queryClient.removeQueries({ queryKey: ["todos"] })
-  }
+  }, [queryClient])
 
   return (
     <div className="flex items-center justify-center gap-4">
