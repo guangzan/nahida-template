@@ -13,7 +13,7 @@
     "@elysiajs/opentelemetry": "catalog:",
     "@elysiajs/swagger": "catalog:",
     "@sinclair/typebox": "^0.34.41",
-    "@t3-oss/env-core": "^0.13.8",
+    "@t3-oss/env-core": "^0.13.11",
     "better-auth": "^1.7.23",
     "date-fns": "^4.4.0",
     "dotenv": "^18.0.10",
