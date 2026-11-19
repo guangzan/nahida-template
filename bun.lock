@@ -80,7 +80,7 @@
     },
   },
   "catalog": {
-    "@elysiajs/cors": "^1.4.0",
+    "@elysiajs/cors": "^1.4.3",
     "@elysiajs/eden": "1.4.4",
     "@elysiajs/openapi": "^1.4.17",
     "@elysiajs/opentelemetry": "1.4.11",
@@ -147,7 +147,7 @@
 
     "@drizzle-team/brocli": ["@drizzle-team/brocli@0.10.2", "https://registry.npmmirror.com/@drizzle-team/brocli/-/brocli-0.10.2.tgz", {}, "sha512-z33Il7l5dKjUgGULTqBsQBQwckHh5AbIuxhdsIxDDiZAzBOrZO6q9ogcWC65kU382AfynTfgNumVcNIjuIua6w=="],
 
-    "@elysiajs/cors": ["@elysiajs/cors@1.4.0", "https://registry.npmmirror.com/@elysiajs/cors/-/cors-1.4.0.tgz", { "peerDependencies": { "elysia": ">= 1.4.0" } }, "sha512-pb0SCzBfFbFSYA/U40HHO7R+YrcXBJXOWgL20eSViK33ol1e20ru2/KUaZYo5IMUn63yaTJI/bQERuQ+77ND8g=="],
+    "@elysiajs/cors": ["@elysiajs/cors@1.4.3", "", { "peerDependencies": { "elysia": ">= 1.4.0" } }, "sha512-UgsFfmR50A46QBa4WumJuLNA5yTTrNTyfegpI1BjA+i/PlrkWd15QWqeOzlvqD2P4AZdIty9zUTuRDSSs0XJNA=="],
 
     "@elysiajs/eden": ["@elysiajs/eden@1.4.4", "https://registry.npmmirror.com/@elysiajs/eden/-/eden-1.4.4.tgz", { "peerDependencies": { "elysia": ">= 1.4.0-exp.0" } }, "sha512-/LVqflmgUcCiXb8rz1iRq9Rx3SWfIV/EkoNqDFGMx+TvOyo8QHAygFXAVQz7RHs+jk6n6mEgpI6KlKBANoErsQ=="],
 
