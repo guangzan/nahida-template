@@ -67,7 +67,7 @@
         "@types/react-dom": "19.2.2",
         "babel-plugin-react-compiler": "^1.0.0",
         "tailwindcss": "^4",
-        "tsx": "^4.20.6",
+        "tsx": "^4.23.15",
         "typescript": "catalog:",
       },
     },
